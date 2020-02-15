@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+/* header */
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+nav img {
+    margin: 10px  0px 10px 20px;
+    grid-column: 1/5;
+    width: 105%;
+    height: 80px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+/* sections */
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    height: 30%;
+    background-image: url("blue-background.jpg");
+    background-color: cornsilk;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.about-section div {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.about-section  p {
+   font-size: 0.9rem;
+   padding: 5px;
+   color: white;
+}
+.about-section h3 {
+    color: white;
+    border-bottom: 5px solid tomato;
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.about-section span{
+    font-size: 1.5em;
+    color:rgb(11, 11, 165);
+}
+
+.weather-section {
+    /*display: flex;*/
+    align-self: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 90%;
+    height: 100%;
+    background-image: url("dreamtime.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form{
+    text-align: center;
+}
+
+input[type="text"] {
+    text-transform: capitalize;
+    background-color: transparent;
+    text-align: center;
+    border: 0;
+    border-bottom: solid 1px #f16051;
+    width: 45%;
+    padding-bottom: 4px;
+    color: #fff !important;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
+
+input[type="text"] {
+    outline: none;
+    font-size: 0.9rem;
+}
+.form-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.output {
+    padding-left: 10px;
+}
+
+button {
+    border: 0;
+    padding: 5px 15px;
+    margin-top: 5px;
+    border-radius: 2px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #f16051;
+    color: #fff;
+    
+}
+
+  
+
+.key_holder {
+   font-size: 1.1rem; 
+   color: #f16051;
+   border-bottom: solid 2px rgba(255,255,255,0.06);
+   padding: 20px 0 20px 0;
+   font-weight: 300;
+   animation: fadeIn ease 1s;
+}
+ 
+ .details {
+   font-size: 1.1rem; 
+   text-align: center;
+   color: #fff;
+   font-weight: 200;
+   text-transform: capitalize;
+}
+
+ .error-details{
+    font-size: 1.1rem; 
+    color: #fff;
+    padding: 5px;
+    font-weight: 200;
+}
+
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 1;
+     }
+}
+
+ @keyframes fadeOut {
+     0% {
+         opacity: 1;
+     }
+     100% {
+         opacity: 0;
+     }
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+    .about-section div {
+        display: flex;
+        align-content: center;
+    }
+    .about-section h3 {
+        border:none;
+        border-right: 5px solid tomato ;
+        font-size: 1.4em;
+        font-weight: 200;
+        letter-spacing: 2.5px;
+        padding-right: 40px;
+        padding-left: 20px;
+    }
+    .about-section  p {
+        font-size: 1.1rem;
+        padding: 10px;
+        
+    }
+    
+    .about-section span{
+        font-size: 1.7em;
+        color:rgb(11, 11, 165);
+    }
+     button {
+        padding: 10px 20px;
+        margin-top: 15px;
+        letter-spacing: 1px;
+        font-size: 1.2rem;    
+    }
+    
+    input[type="text"] {
+        border-bottom: solid 2px #f16051;
+        padding-bottom: 5px;
+        color: #fff ;
+        width: 40%;
+        letter-spacing: 2px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    .output {
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-content: center;
+        align-self: center;
+    }
+     
+
+    .key_holder {
+        font-size: 1.3em; 
+        border-bottom: solid 4px rgba(255,255,255,0.06);
+        padding: 30px 0 ;
+        font-weight: 400;
+    
+    }
+    
+    .details {
+        font-size: 1.5rem; 
+        text-align: center;
+        font-weight: 400;
+    }
+ 
+
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px){
+*{
+    margin: 0;
+    padding: 0;
+}
+  .weather-section {
+      margin-top: 0;
+      height: 100%;
+      width: 60%;
+      min-height: 500px;
+    }
+  .about-section{
+      width: 40%;
+      height: 100%;
+      min-height: 500px;
+    }
+  
+    .about-section span{
+        font-size: 2em;
+        color:rgb(11, 11, 165);
+    }
+  
+    nav img {
+        margin: 10px  0px 10px 20px;
+        grid-column: 3/7;
+    }
+
+    .about-section div {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .about-section h3 {
+        border:none;
+    }
+    .about-section  p {
+        border-top: 5px solid tomato ;
+        font-size: 1.3rem;
+        padding: 10px;
+        
+    }
+}
+    
+
+ 
+
