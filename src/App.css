@@ -4,8 +4,12 @@
   padding: 0;
   
 }
+html{
+  height: 100%;
+}
 body{
   background-image: url("blue-background.jpg");
+  height: 100%;
 }
 
 .container {
@@ -13,7 +17,7 @@ body{
   height: 100%;
   width: 100%;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-rows: repeat(8, 1fr);
  /* background-image: url("blue-background.jpg");
   background-repeat: no-repeat;
   background-color:blue;
@@ -30,13 +34,21 @@ body{
 
 .container main {
   grid-column: 1/9;
-  grid-row: 2/11;
+  grid-row: 2/9;
   height: 100%;
   display: flex;
   width: 100%;
   flex-direction: column;
 
 }
+@media screen and (min-width: 620px){
+  
+ main{
+  height: 90%;
+  grid-row: 3/9;
+ 
+} 
+  }
 
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px){

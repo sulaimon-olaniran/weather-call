@@ -61,12 +61,11 @@ nav img {
 }
 
 .weather-section {
-    /*display: flex;*/
     align-self: center;
     flex-direction: column;
     margin-top: 20px;
     width: 90%;
-    height: 100%;
+    height: 60%;
     background-image: url("dreamtime.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,6 +171,12 @@ button {
         display: flex;
         align-content: center;
     }
+    
+    .weather-section {
+        width: 90%;
+        height: 100%;
+    }
+
     .about-section h3 {
         border:none;
         border-right: 5px solid tomato ;
